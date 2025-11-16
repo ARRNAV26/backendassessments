@@ -11,9 +11,7 @@ function spreadLineProcessor(line = '') {
   let nodeInfo = {};
   const lineMatches = line.match(endpointRegex);
   const lineGroups = lineMatches?.groups;
-  const {
-    SPREAD_PROP,
-  } = lineGroups || {};
+  const { SPREAD_PROP } = lineGroups || {};
   nodeInfo = {
     lineMatched: !!SPREAD_PROP,
     name: SPREAD_PROP,

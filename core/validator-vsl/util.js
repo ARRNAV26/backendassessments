@@ -27,7 +27,7 @@ const configFileExists = fs.existsSync(configFile);
 if (fileExists) {
   // console.log(lexer(lookupFile));
   let config = {};
-  if(configFileExists) {
+  if (configFileExists) {
     config = loadSPCLConfig(configFile);
   }
   const lexicalTokens = lexer(lookupFile);
@@ -46,9 +46,9 @@ if (fileExists) {
         //serv: serviceFileGenerator(abstractSyntaxTree),
       },
       null,
-      2,
+      2
     ),
-    { encoding: 'utf-8' },
+    { encoding: 'utf-8' }
   );
 } else {
   console.warn(`${lookupFile} not found`);
