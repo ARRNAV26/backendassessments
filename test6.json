@@ -1,0 +1,7 @@
+{
+  "accounts": [
+    {"id": "a", "balance": 100, "currency": "USD"},
+    {"id": "b", "balance": 500, "currency": "USD"}
+  ],
+  "instruction": "DEBIT 500 USD FROM ACCOUNT a FOR CREDIT TO ACCOUNT b"
+}
