@@ -33,13 +33,14 @@ module.exports = createHandler({
 
     const response = await paymentInstructionsService({ accounts, instruction });
 
-    const status =
-      response.status === 'failed'
-        ? helpers.http_statuses.HTTP_400_BAD_REQUEST
-        : helpers.http_statuses.HTTP_200_OK;
+    // Return with appropriate HTTP status but unified response structure
+    const httpStatus = response.status === 'failed'
+      ? helpers.http_statuses.HTTP_400_BAD_REQUEST
+      : helpers.http_statuses.HTTP_200_OK;
 
     return {
-      status,
+      status: httpStatus,
+      message: response.status === 'failed' ? 'Transaction failed' : 'Transaction successful',
       data: response,
     };
   },
