@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Assessment Codebase Guide
 
 This guide will help you understand the codebase architecture and set up your services, endpoints, and middleware correctly. This is NOT a solution to the assessment - it's a reference guide to help you implement your own solution following the codebase conventions.
@@ -932,3 +933,6 @@ For the assessment, you can only use basic string methods:
 **Good luck with your assessment!** 🚀
 
 Remember: This guide shows you HOW to structure your code, not WHAT logic to implement. The problem-solving is up to you!
+=======
+# backendassessments
+>>>>>>> 0837a76301445d66c98d25c084886b54de81588f
