@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `https://web-production-2982.up.railway.app/payment/payment-instructions` endpoint processes payment transaction instructions.
+The `https://web-production-2982.up.railway.app/payment-instructions` endpoint processes payment transaction instructions.
 
 **Endpoint:** POST `/payment-instructions`
 
